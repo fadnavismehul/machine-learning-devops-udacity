@@ -6,7 +6,6 @@ A library to predict customer churn
 # import libraries
 import os
 import logging
-import pytest
 # Other libraries
 # import shap
 import joblib
@@ -270,6 +269,9 @@ def train_models(X_train, X_test, y_train, y_test):
 if __name__ == "__main__":
 
     df = import_data("./data/bank_data.csv")
+
+    perform_eda(df)
+
     category_lst = [
         'Gender',
         'Education_Level',
