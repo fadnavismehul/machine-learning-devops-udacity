@@ -64,8 +64,8 @@ def perform_eda(df):
     df['Churn'].hist().figure.savefig('./images/eda/EDA-Churn-hist.png')
     df['Customer_Age'].hist().figure.savefig(
         './images/eda/EDA-Customer_Age-hist.png')
-    df.Marital_Status.value_counts('normalize').plot(kind='bar').figure.savefig(
-        './images/eda/EDA-Marital_Status-hist.png')
+    df.Marital_Status.value_counts('normalize').plot(
+        kind='bar').figure.savefig('./images/eda/EDA-Marital_Status-hist.png')
     sns.histplot(df['Total_Trans_Ct'], stat='density', kde=True).figure.savefig(
         './images/eda/EDA-Total_Trans_Ct-density.png')
     sns.heatmap(
@@ -96,6 +96,7 @@ def encoder_helper(df, category_lst):
 
 def perform_feature_engineering(df, response='Churn'):
     '''
+    Subsets the important features and splits data into train and test sets
     input:
               df: pandas dataframe
     output:
@@ -279,7 +280,7 @@ if __name__ == "__main__":
         'Income_Category',
         'Card_Category'
     ]
-    
+
     df_encoded = encoder_helper(df, category_lst)
 
     X_train, X_test, y_train, y_test = perform_feature_engineering(
