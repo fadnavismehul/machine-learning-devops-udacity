@@ -37,6 +37,8 @@ def import_data(path):
             path: a path to the csv
     output:
             df: pandas dataframe
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
     df_input = pd.read_csv(path)
     df_input['Churn'] = df_input['Attrition_Flag'].apply(
@@ -53,6 +55,8 @@ def perform_eda(df):
 
     output:
             None
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
     logging.info("Data frame is of shape %s", df.shape)
     logging.info("Null distribution looks like the following:")
@@ -84,7 +88,9 @@ def encoder_helper(df, category_lst):
             df: pandas dataframe
             category_lst: list of columns that contain categorical features
     output:
-            df: pandas dataframe with new columns for
+            df: pandas dataframe with new columns
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
 
     for category in category_lst:
@@ -104,6 +110,8 @@ def perform_feature_engineering(df, response='Churn'):
               X_test: X testing data
               y_train: y training data
               y_test: y testing data
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
     keep_cols = [
         'Customer_Age',
@@ -153,6 +161,8 @@ def classification_report_image(y_train,
 
     output:
              None
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
     # RF
     fig = plt.figure()  # an empty figure with no Axes
@@ -194,6 +204,8 @@ def feature_importance_plot(model, X_data, output_pth):
 
     output:
              None
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
 #     explainer = shap.TreeExplainer(model.best_estimator_)
 #     shap_values = explainer.shap_values(X_data)
@@ -233,6 +245,8 @@ def train_models(X_train, X_test, y_train, y_test):
               y_test: y testing data
     output:
               None
+    author: Mehul Fadnavis
+    date: 2022-06-10
     '''
     rfc = RandomForestClassifier(random_state=42)
     lrc = LogisticRegression(solver='lbfgs', max_iter=3000)

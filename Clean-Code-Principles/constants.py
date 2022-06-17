@@ -1,5 +1,9 @@
 '''
 File to document various constants
+
+Author: Mehul Fadnavis
+Date: 2022-06-10 
+
 '''
 
 category_lst = [
