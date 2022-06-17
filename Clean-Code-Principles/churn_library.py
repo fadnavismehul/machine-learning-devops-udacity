@@ -1,6 +1,10 @@
 # library doc string
 '''
 A library to predict customer churn
+
+Author: Mehul Fadnavis
+Date: 2022-06-10
+
 '''
 
 # import libraries

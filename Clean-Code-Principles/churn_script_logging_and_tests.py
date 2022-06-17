@@ -1,5 +1,9 @@
 '''
 Script to test churn_library.py functions
+
+Author: Mehul Fadnavis
+Date: 2022-06-10
+
 '''
 import os
 import logging
