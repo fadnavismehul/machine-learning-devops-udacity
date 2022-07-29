@@ -1,0 +1,9 @@
+
+
+
+
+>>> artifact = run.use_artifact("exercise_1/zen_of_python:v1")
+
+
+>>> artifact.file()
+'./artifacts/zen_of_python:v1/zen.txt'

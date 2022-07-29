@@ -1,0 +1,160 @@
+2022-07-28 19:02:29,874 INFO    MainThread:87998 [internal.py:wandb_internal():90] W&B internal server running at pid: 87998, started at: 2022-07-28 19:02:29.873937
+2022-07-28 19:02:29,875 INFO    WriterThread:87998 [datastore.py:open_for_write():75] open: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/run-20x7gzf9.wandb
+2022-07-28 19:02:29,877 DEBUG   SenderThread:87998 [sender.py:send():235] send: header
+2022-07-28 19:02:29,877 DEBUG   SenderThread:87998 [sender.py:send():235] send: run
+2022-07-28 19:02:30,246 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: check_version
+2022-07-28 19:02:30,247 INFO    SenderThread:87998 [dir_watcher.py:__init__():205] watching files in: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files
+2022-07-28 19:02:30,247 INFO    SenderThread:87998 [sender.py:_start_run_threads():812] run started: 20x7gzf9 with start time 1659006148
+2022-07-28 19:02:30,247 DEBUG   SenderThread:87998 [sender.py:send():235] send: summary
+2022-07-28 19:02:30,248 INFO    SenderThread:87998 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-28 19:02:30,248 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: check_version
+2022-07-28 19:02:30,296 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: run_start
+2022-07-28 19:02:30,298 DEBUG   HandlerThread:87998 [meta.py:__init__():35] meta init
+2022-07-28 19:02:30,298 DEBUG   HandlerThread:87998 [meta.py:__init__():49] meta init done
+2022-07-28 19:02:30,298 DEBUG   HandlerThread:87998 [meta.py:probe():209] probe
+2022-07-28 19:02:30,299 DEBUG   HandlerThread:87998 [meta.py:_setup_git():199] setup git
+2022-07-28 19:02:30,322 DEBUG   HandlerThread:87998 [meta.py:_setup_git():206] setup git done
+2022-07-28 19:02:30,323 DEBUG   HandlerThread:87998 [meta.py:_save_pip():53] save pip
+2022-07-28 19:02:30,324 DEBUG   HandlerThread:87998 [meta.py:_save_pip():67] save pip done
+2022-07-28 19:02:30,324 DEBUG   HandlerThread:87998 [meta.py:_save_conda():74] save conda
+2022-07-28 19:02:31,254 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/wandb-summary.json
+2022-07-28 19:02:31,255 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/conda-environment.yaml
+2022-07-28 19:02:31,255 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/requirements.txt
+2022-07-28 19:02:33,258 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/conda-environment.yaml
+2022-07-28 19:02:33,326 DEBUG   HandlerThread:87998 [meta.py:_save_conda():84] save conda done
+2022-07-28 19:02:33,326 DEBUG   HandlerThread:87998 [meta.py:probe():247] probe done
+2022-07-28 19:02:33,333 DEBUG   SenderThread:87998 [sender.py:send():235] send: files
+2022-07-28 19:02:33,333 INFO    SenderThread:87998 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-07-28 19:02:33,339 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-28 19:02:33,340 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: stop_status
+2022-07-28 19:02:33,615 DEBUG   SenderThread:87998 [sender.py:send():235] send: telemetry
+2022-07-28 19:02:34,262 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/wandb-metadata.json
+2022-07-28 19:02:34,262 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_created():256] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/output.log
+2022-07-28 19:02:34,295 INFO    Thread-11 :87998 [upload_job.py:push():132] Uploaded file /var/folders/g2/mc945vwd1fv74fgwp37yl33r0000gr/T/tmpm72pq7m9wandb/durwvh2m-wandb-metadata.json
+2022-07-28 19:02:34,520 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: log_artifact
+2022-07-28 19:02:34,522 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: log_artifact
+2022-07-28 19:02:36,268 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/output.log
+2022-07-28 19:02:36,857 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:36,985 INFO    Thread-13 :87998 [upload_job.py:push():90] Uploaded file /Users/mehul.fadnavis/.cache/wandb/artifacts/obj/md5/f7/6effe6a88611920f11e469d9f51f98
+2022-07-28 19:02:37,273 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/output.log
+2022-07-28 19:02:38,152 INFO    SenderThread:87998 [sender.py:send_request_log_artifact():1006] logged artifact genres_mod.parquet - {'id': 'QXJ0aWZhY3Q6MTY0MDc3MjQx', 'digest': 'd07cfe0c8bd86971c9f85bce13c85266', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0ODc5NTgx', 'latestArtifact': None}, 'version': 'latest'}
+2022-07-28 19:02:38,152 DEBUG   SenderThread:87998 [sender.py:send():235] send: telemetry
+2022-07-28 19:02:38,152 DEBUG   SenderThread:87998 [sender.py:send():235] send: exit
+2022-07-28 19:02:38,153 INFO    SenderThread:87998 [sender.py:send_exit():371] handling exit code: 0
+2022-07-28 19:02:38,153 INFO    SenderThread:87998 [sender.py:send_exit():373] handling runtime: 6
+2022-07-28 19:02:38,154 INFO    SenderThread:87998 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-28 19:02:38,155 INFO    SenderThread:87998 [sender.py:send_exit():379] send defer
+2022-07-28 19:02:38,155 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:38,156 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,156 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 0
+2022-07-28 19:02:38,156 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,156 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-07-28 19:02:38,157 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 1
+2022-07-28 19:02:38,157 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,157 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 1
+2022-07-28 19:02:38,263 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:38,263 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,263 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-07-28 19:02:38,263 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 2
+2022-07-28 19:02:38,264 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:38,264 DEBUG   SenderThread:87998 [sender.py:send():235] send: stats
+2022-07-28 19:02:38,264 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,264 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 2
+2022-07-28 19:02:38,265 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,265 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-07-28 19:02:38,265 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 3
+2022-07-28 19:02:38,265 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,265 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 3
+2022-07-28 19:02:38,265 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,266 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-07-28 19:02:38,266 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 4
+2022-07-28 19:02:38,266 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,266 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 4
+2022-07-28 19:02:38,266 DEBUG   SenderThread:87998 [sender.py:send():235] send: summary
+2022-07-28 19:02:38,267 INFO    SenderThread:87998 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-07-28 19:02:38,267 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,267 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-07-28 19:02:38,267 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 5
+2022-07-28 19:02:38,267 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,268 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 5
+2022-07-28 19:02:38,268 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,268 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-07-28 19:02:38,273 INFO    Thread-7  :87998 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/wandb-summary.json
+2022-07-28 19:02:38,371 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:38,595 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 6
+2022-07-28 19:02:38,596 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:38,596 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:38,596 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 6
+2022-07-28 19:02:38,596 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:38,596 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-07-28 19:02:38,596 INFO    SenderThread:87998 [dir_watcher.py:finish():336] shutting down directory watcher
+2022-07-28 19:02:38,700 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,279 INFO    SenderThread:87998 [dir_watcher.py:_on_file_modified():269] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/config.yaml
+2022-07-28 19:02:39,280 INFO    SenderThread:87998 [dir_watcher.py:finish():366] scan: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files
+2022-07-28 19:02:39,280 INFO    SenderThread:87998 [dir_watcher.py:finish():380] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/requirements.txt requirements.txt
+2022-07-28 19:02:39,281 INFO    SenderThread:87998 [dir_watcher.py:finish():380] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/output.log output.log
+2022-07-28 19:02:39,284 INFO    SenderThread:87998 [dir_watcher.py:finish():380] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/config.yaml config.yaml
+2022-07-28 19:02:39,286 INFO    SenderThread:87998 [dir_watcher.py:finish():380] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/wandb-summary.json wandb-summary.json
+2022-07-28 19:02:39,290 INFO    SenderThread:87998 [dir_watcher.py:finish():380] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/conda-environment.yaml conda-environment.yaml
+2022-07-28 19:02:39,293 INFO    SenderThread:87998 [dir_watcher.py:finish():380] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/wandb-metadata.json wandb-metadata.json
+2022-07-28 19:02:39,293 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 7
+2022-07-28 19:02:39,293 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,296 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:39,296 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 7
+2022-07-28 19:02:39,297 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:39,297 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-07-28 19:02:39,297 INFO    SenderThread:87998 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-28 19:02:39,402 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,402 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,505 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,505 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,610 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,610 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,712 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,712 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,818 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,818 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,920 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:39,920 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:39,991 INFO    Thread-18 :87998 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/conda-environment.yaml
+2022-07-28 19:02:40,010 INFO    Thread-16 :87998 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/config.yaml
+2022-07-28 19:02:40,010 INFO    Thread-14 :87998 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/requirements.txt
+2022-07-28 19:02:40,022 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:40,022 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:40,091 INFO    Thread-17 :87998 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/wandb-summary.json
+2022-07-28 19:02:40,092 INFO    Thread-15 :87998 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/files/output.log
+2022-07-28 19:02:40,125 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:40,125 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:40,230 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:40,230 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:40,293 INFO    Thread-6  :87998 [sender.py:transition_state():392] send defer: 8
+2022-07-28 19:02:40,294 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:40,294 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 8
+2022-07-28 19:02:40,294 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:40,294 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-07-28 19:02:40,335 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:41,118 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 9
+2022-07-28 19:02:41,130 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:41,131 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:41,132 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 9
+2022-07-28 19:02:41,132 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:41,132 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-07-28 19:02:41,133 INFO    SenderThread:87998 [sender.py:transition_state():392] send defer: 10
+2022-07-28 19:02:41,133 DEBUG   SenderThread:87998 [sender.py:send():235] send: final
+2022-07-28 19:02:41,134 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: defer
+2022-07-28 19:02:41,134 DEBUG   SenderThread:87998 [sender.py:send():235] send: footer
+2022-07-28 19:02:41,134 INFO    HandlerThread:87998 [handler.py:handle_request_defer():164] handle defer: 10
+2022-07-28 19:02:41,134 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: defer
+2022-07-28 19:02:41,134 INFO    SenderThread:87998 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-07-28 19:02:41,234 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-28 19:02:41,235 DEBUG   SenderThread:87998 [sender.py:send_request():249] send_request: poll_exit
+2022-07-28 19:02:41,235 INFO    SenderThread:87998 [file_pusher.py:join():150] waiting for file pusher
+2022-07-28 19:02:41,597 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: sampled_history
+2022-07-28 19:02:41,598 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: get_summary
+2022-07-28 19:02:41,598 DEBUG   HandlerThread:87998 [handler.py:handle_request():141] handle_request: shutdown
+2022-07-28 19:02:41,598 INFO    HandlerThread:87998 [handler.py:finish():806] shutting down handler
+2022-07-28 19:02:42,136 INFO    WriterThread:87998 [datastore.py:close():279] close: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/wandb/run-20220728_190228-20x7gzf9/run-20x7gzf9.wandb
+2022-07-28 19:02:42,496 INFO    SenderThread:87998 [sender.py:finish():1111] shutting down sender
+2022-07-28 19:02:42,496 INFO    SenderThread:87998 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-28 19:02:42,496 INFO    SenderThread:87998 [file_pusher.py:join():150] waiting for file pusher
+2022-07-28 19:02:42,496 INFO    MainThread:87998 [internal.py:handle_exit():80] Internal process exited

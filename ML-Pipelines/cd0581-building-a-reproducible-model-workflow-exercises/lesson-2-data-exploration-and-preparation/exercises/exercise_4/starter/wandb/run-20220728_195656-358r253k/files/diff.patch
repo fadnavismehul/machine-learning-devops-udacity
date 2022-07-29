@@ -1,0 +1,253 @@
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+index cb43d39..054bf04 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/upload_artifact.py
+@@ -16,6 +16,15 @@ def go(args):
+     # Create a W&B run in the project ``exercise_1``. Set the option ``job_type="upload_file"``:
+ 
+     # YOUR CODE HERE
++    with wandb.init(project="exercise_1") as run:
++
++        artifact = wandb.Artifact(
++            name=args.artifact_name,
++            type=args.artifact_type,
++            description=args.artifact_description
++        )
++        artifact.add_file(args.input_file)
++        run.log_artifact(artifact)
+ 
+     # Create an instance of the class ``wandb.Artifact``. Use the ``artifact_name`` parameter to fill
+     # the keyword ``name`` when constructing the wandb.Artifact class.
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
+index f455e13..5d57d1f 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/use_artifact.py
+@@ -19,6 +19,8 @@ def go(args):
+     # YOUR CODE HERE: get the artifact and store its local path in the variable "artifact_path"
+     # HINT: you can get the artifact path by using the "file()" method
+ 
++    artifact = run.use_artifact(args.artifact_name)
++
+     artifact_path = artifact.file()
+ 
+     logger.info("Artifact content:")
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
+index 634c12b..47ad5ad 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_1/starter/zen.txt
+@@ -19,3 +19,5 @@ Although never is often better than *right* now.
+ If the implementation is hard to explain, it's a bad idea.
+ If the implementation is easy to explain, it may be a good idea.
+ Namespaces are one honking great idea -- let's do more of those!
++
++Lets do it 
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml
+index b735436..d0eab2f 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/conda.yml
+@@ -3,4 +3,11 @@ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+-  # Complete HERE
++  - requests=2.24.0
++  - pip=20.3.3
++  - mlflow=1.14.1
++  - hydra-core=1.0.6
++  - pip=20.3.3
++  - pip:
++    - wandb==0.12.17
++
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml
+index 42cd9c8..e74843c 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/download_data/conda.yml
+@@ -6,4 +6,4 @@ dependencies:
+   - requests=2.24.0
+   - pip=20.3.3
+   - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++      - wandb==0.12.17
+\ No newline at end of file
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py
+index 47fba9e..7175e9d 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/main.py
+@@ -16,8 +16,8 @@ def go(config: DictConfig):
+     root_path = hydra.utils.get_original_cwd()
+ 
+     _ = mlflow.run(
+-        os.path.join(root_path, "download_data"),
+-        "main",
++        uri=os.path.join(root_path, "download_data"),
++        entry_point="main",
+         parameters={
+             "file_url": config["data"]["file_url"],
+             "artifact_name": "iris.csv",
+@@ -26,6 +26,16 @@ def go(config: DictConfig):
+         },
+     )
+ 
++    _ = mlflow.run(
++        uri=os.path.join(root_path, "process_data"),
++        entry_point="main",
++        parameters={
++            "input_artifact": "iris.csv:latest",
++            "artifact_name": "cleaned_data",
++            "artifact_type": "clean_data",
++            "artifact_description": "Output data"
++        },
++    )
+     ##################
+     # Your code here: use the artifact we created in the previous step as input for the `process_data` step
+     # and produce a new artifact called "cleaned_data".
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/MLproject b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/MLproject
+index f45f2a9..a034b63 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/MLproject
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/MLproject
+@@ -19,7 +19,7 @@ entry_points:
+         type: str
+ 
+     command: >-
+-      python run.py --input_artifact {input_artifact} \
++      python main.py --input_artifact {input_artifact} \
+                     --artifact_name {artifact_name} \
+                     --artifact_type {artifact_type} \
+                     --artifact_description {artifact_description}
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml
+index 09811f0..1f2ac0f 100644
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml
++++ b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/conda.yml
+@@ -11,4 +11,4 @@ dependencies:
+   - matplotlib==3.2.2
+   - pillow=8.1.2
+   - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++      - wandb==0.12.17
+\ No newline at end of file
+diff --git a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py b/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py
+deleted file mode 100644
+index c7ad9da..0000000
+--- a/lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/run.py
++++ /dev/null
+@@ -1,88 +0,0 @@
+-#!/usr/bin/env python
+-import argparse
+-import logging
+-import seaborn as sns
+-import pandas as pd
+-import wandb
+-
+-from sklearn.manifold import TSNE
+-
+-logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
+-logger = logging.getLogger()
+-
+-
+-def go(args):
+-
+-    run = wandb.init(job_type="process_data")
+-
+-    logger.info("Downloading artifact")
+-    artifact = run.use_artifact(args.input_artifact)
+-    artifact_path = artifact.file()
+-
+-    iris = pd.read_csv(
+-        artifact_path,
+-        skiprows=1,
+-        names=("sepal_length", "sepal_width", "petal_length", "petal_width", "target"),
+-    )
+-
+-    target_names = "setosa,versicolor,virginica".split(",")
+-    iris["target"] = [target_names[k] for k in iris["target"]]
+-
+-    logger.info("Performing t-SNE")
+-    tsne = TSNE(n_components=2, init="pca", random_state=0)
+-    transf = tsne.fit_transform(iris.iloc[:, :4])
+-
+-    iris["tsne_1"] = transf[:, 0]
+-    iris["tsne_2"] = transf[:, 1]
+-
+-    g = sns.displot(iris, x="tsne_1", y="tsne_2", hue="target", kind="kde")
+-
+-    logger.info("Uploading image to W&B")
+-    run.log({"t-SNE": wandb.Image(g.fig)})
+-
+-    logger.info("Creating artifact")
+-
+-    iris.to_csv("clean_data.csv")
+-
+-    artifact = wandb.Artifact(
+-        name=args.artifact_name,
+-        type=args.artifact_type,
+-        description=args.artifact_description,
+-    )
+-    artifact.add_file("clean_data.csv")
+-
+-    logger.info("Logging artifact")
+-    run.log_artifact(artifact)
+-
+-
+-if __name__ == "__main__":
+-    parser = argparse.ArgumentParser(
+-        description="Download a file and upload it as an artifact to W&B",
+-        fromfile_prefix_chars="@",
+-    )
+-
+-    parser.add_argument(
+-        "--input_artifact",
+-        type=str,
+-        help="Fully-qualified name for the input artifact",
+-        required=True,
+-    )
+-
+-    parser.add_argument(
+-        "--artifact_name", type=str, help="Name for the artifact", required=True
+-    )
+-
+-    parser.add_argument(
+-        "--artifact_type", type=str, help="Type for the artifact", required=True
+-    )
+-
+-    parser.add_argument(
+-        "--artifact_description",
+-        type=str,
+-        help="Description for the artifact",
+-        required=True,
+-    )
+-
+-    args = parser.parse_args()
+-
+-    go(args)
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+index e69de29..1eb58df 100644
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/MLproject
+@@ -0,0 +1,7 @@
++name: eda
++conda_env: conda.yml
++
++entry_points:
++  main:
++    command: >-
++      jupyter notebook
+diff --git a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+index f216511..acf9dfa 100644
+--- a/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
++++ b/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/conda.yml
+@@ -1,4 +1,4 @@
+-name: download_data
++name: eda
+ channels:
+   - conda-forge
+   - defaults
+@@ -10,4 +10,4 @@ dependencies:
+   - pandas-profiling=2.11.0
+   - pyarrow=2.0
+   - pip:
+-      - wandb==0.10.21
+\ No newline at end of file
++      - wandb==0.12.17
+\ No newline at end of file

@@ -1,0 +1,9 @@
+2022-07-17 16:04:13,189 Getting artifact
+Traceback (most recent call last):
+  File "use_artifact.py", line 44, in <module>
+    go(args)
+  File "use_artifact.py", line 22, in go
+    artifact = run.use_artifact(name=args.artifact_name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlops-basics/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+TypeError: use_artifact() got an unexpected keyword argument 'name'

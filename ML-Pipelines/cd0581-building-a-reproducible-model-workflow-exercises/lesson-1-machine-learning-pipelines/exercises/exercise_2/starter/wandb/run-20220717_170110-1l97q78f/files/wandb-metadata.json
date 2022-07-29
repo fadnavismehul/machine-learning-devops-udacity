@@ -1,0 +1,31 @@
+{
+    "os": "macOS-11.6.7-x86_64-i386-64bit",
+    "python": "3.10.5",
+    "heartbeatAt": "2022-07-17T11:31:12.102138",
+    "startedAt": "2022-07-17T11:31:10.033822",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://raw.githubusercontent.com/scikit-learn/scikit-learn/4dfdfb4e1bb3719628753a4ece995a1b2fa5312a/sklearn/datasets/data/iris.csv",
+        "--artifact_name",
+        "iris",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "This data sets consists of 3 different types of irises\u2019 (Setosa, Versicolour, and Virginica) petal and sepal length"
+    ],
+    "state": "running",
+    "program": "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/download_data.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_2/starter/download_data.py",
+    "git": {
+        "remote": "https://github.com/udacity/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827"
+    },
+    "email": "fadnavismehul@gmail.com",
+    "root": "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "ITSG006062-MAC",
+    "username": "mehul.fadnavis",
+    "executable": "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-3b124040fac0cc0e514bf8ec586634d6fad6a365/bin/python"
+}

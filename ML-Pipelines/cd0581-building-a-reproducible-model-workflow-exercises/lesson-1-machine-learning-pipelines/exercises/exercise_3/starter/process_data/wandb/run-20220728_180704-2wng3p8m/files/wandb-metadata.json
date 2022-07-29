@@ -1,0 +1,31 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-07-28T10:07:06.093416",
+    "startedAt": "2022-07-28T10:07:04.349155",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "iris.csv:latest",
+        "--artifact_name",
+        "cleaned_data",
+        "--artifact_type",
+        "clean_data",
+        "--artifact_description",
+        "Output data"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "lesson-1-machine-learning-pipelines/exercises/exercise_3/starter/process_data/main.py",
+    "git": {
+        "remote": "https://github.com/udacity/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "f8ceef1ef5f8d5e8ac5995dbf09d0c6d8be15827"
+    },
+    "email": "fadnavismehul@gmail.com",
+    "root": "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "ITSG006062-MAC",
+    "username": "mehul.fadnavis",
+    "executable": "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-d993fedbc848a2d3fe8b57e1a2b66c14c39d1072/bin/python"
+}
