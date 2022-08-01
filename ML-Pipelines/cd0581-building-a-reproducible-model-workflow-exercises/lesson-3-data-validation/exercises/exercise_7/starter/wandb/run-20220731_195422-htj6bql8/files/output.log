@@ -1,0 +1,55 @@
+[1mcollected 3 items                                                                                                                                                                                         
+test_data.py::test_column_presence_and_type [32mPASSED
+test_data.py::test_class_names [32mPASSED
+test_data.py::test_column_ranges [31mFAILED
+================================================================================================ FAILURES =================================================================================================
+[31m[1m___________________________________________________________________________________________ test_column_ranges ____________________________________________________________________________________________
+data =        Unnamed: 0  danceability  energy  key  ...      genre                                      song_name           ...            NaN       Best of Hardstyle 2020                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+    def test_column_ranges(data):
+        ranges = {
+            "time_signature": (1, 5),
+            "key": (0, 11),
+            "danceability": (0, 1),
+            "energy": (0, 1),
+            "loudness": (-35, 5),
+            "speechiness": (0, 1),
+            "acousticness": (0, 1),
+            "instrumentalness": (0, 1),
+            "liveness": (0, 1),
+            "valence": (0, 1),
+            "tempo": (50, 250),
+            "duration_ms": (20000, 1000000),
+        }
+        for col_name, (minimum, maximum) in ranges.items():
+            # YOUR CODE HERE: check that the values in the column col_name are within the expected range
+            # HINT: look at the .between method of pandas, and then use .all() like in the previous
+            # test
+>           assert data.col_name.between(minimum,maximum)
+[31m[1mtest_data.py[39m[22m:100:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+self =        Unnamed: 0  danceability  energy  key  ...      genre                                      song_name           ...            NaN       Best of Hardstyle 2020                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+name = 'col_name'
+    def __getattr__(self, name: str):
+        """
+        After regular attribute access, try looking up the name
+        This allows simpler access to columns for interactive use.
+        """
+        # Note: obj.x will always call obj.__getattribute__('x') prior to
+        # calling obj.__getattr__('x').
+        if (
+            name in self._internal_names_set
+            or name in self._metadata
+            or name in self._accessors
+        ):
+            return object.__getattribute__(self, name)
+        else:
+            if self._info_axis._can_hold_identifiers_and_holds_name(name):
+                return self[name]
+>           return object.__getattribute__(self, name)
+[31m[1mE           AttributeError: 'DataFrame' object has no attribute 'col_name'
+[31m[1m/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-0e47507f18f79388aa36e444f630c17e7de6d5b2/lib/python3.9/site-packages/pandas/core/generic.py[39m[22m:5465: AttributeError
+========================================================================================= short test summary info =========================================================================================
+FAILED test_data.py::test_column_ranges - AttributeError: 'DataFrame' object has no attribute 'col_name'
+[31m====================================================================================== [1m1 failed[39m[22m, [32m2 passed[31m in 31.66s =======================================================================================

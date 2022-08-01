@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py", line 69, in <module>
+    go(args)
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py", line 19, in go
+    df['title'].fillna(value='',inplace=True)
+NameError: name 'true' is not defined

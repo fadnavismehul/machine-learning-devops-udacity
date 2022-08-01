@@ -67,6 +67,8 @@ def test_class_names(data):
         "hardstyle",
     ]
 
+    assert data.genre.isin(known_classes).all()
+
     # YOUR CODE HERE: implement a test that checks the "genre" column to make sure
     # that the class names are legal
     # HINT: you can use the .isin method of pandas, and .all to check that the condition
@@ -95,4 +97,5 @@ def test_column_ranges(data):
         # YOUR CODE HERE: check that the values in the column col_name are within the expected range
         # HINT: look at the .between method of pandas, and then use .all() like in the previous
         # test
-        pass
+        assert data[col_name].dropna().between(minimum,maximum).all(), f"Column {col_name} is not between {minimum} and {maximum}. \
+        Min is {data[col_name].dropna().min()} and Max is {data[col_name].dropna().max()}"

@@ -1,0 +1,16 @@
+
+2022-08-01 22:04:08,743 Downloading and reading train artifact
+2022-08-01 22:04:10,514 Extracting target from dataframe
+2022-08-01 22:04:10,521 Splitting train/val
+Traceback (most recent call last):
+  File "run.py", line 176, in <module>
+    go(args)
+  File "run.py", line 39, in go
+    X_train, X_val, y_train, y_val = train_test_split(
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 2197, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 1387, in split
+    for train, test in self._iter_indices(X, y, groups):
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 1715, in _iter_indices
+    raise ValueError("The least populated class in y has only 1"
+ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.

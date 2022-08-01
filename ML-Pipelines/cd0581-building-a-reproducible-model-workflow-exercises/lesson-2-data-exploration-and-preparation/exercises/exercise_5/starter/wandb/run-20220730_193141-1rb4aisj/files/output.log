@@ -1,0 +1,32 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Project fadnavismehul/exercise_5 does not contain artifact: "preprocessed_data.csv:latest"
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/normalize.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 777, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 3493, in __init__
+    self._load()
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 4060, in _load
+    raise ValueError(
+ValueError: Project fadnavismehul/exercise_5 does not contain artifact: "preprocessed_data.csv:latest"
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py", line 69, in <module>
+    go(args)
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py", line 16, in go
+    artifact = run.use_artifact(args.input_artifact)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 2308, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/normalize.py", line 58, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/normalize.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 777, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 3493, in __init__
+    self._load()
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 4060, in _load
+    raise ValueError(
+wandb.errors.CommError: Project fadnavismehul/exercise_5 does not contain artifact: "preprocessed_data.csv:latest"

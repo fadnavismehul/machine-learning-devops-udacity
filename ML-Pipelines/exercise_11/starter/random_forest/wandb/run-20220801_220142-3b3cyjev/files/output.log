@@ -1,0 +1,7 @@
+
+2022-08-01 22:01:45,670 Downloading and reading train artifact
+2022-08-01 22:01:47,415 Extracting target from dataframe
+2022-08-01 22:01:47,419 Splitting train/val
+2022-08-01 22:01:47,448 Setting up pipeline
+2022-08-01 22:01:47,454 Fitting
+2022-08-01 22:01:48,835 Scoring

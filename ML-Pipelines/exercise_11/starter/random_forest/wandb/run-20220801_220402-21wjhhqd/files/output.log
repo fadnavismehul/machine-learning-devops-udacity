@@ -1,0 +1,20 @@
+
+2022-08-01 22:04:09,068 Downloading and reading train artifact
+2022-08-01 22:04:10,756 Extracting target from dataframe
+2022-08-01 22:04:10,760 Splitting train/val
+Traceback (most recent call last):
+  File "run.py", line 176, in <module>
+    go(args)
+  File "run.py", line 39, in go
+    X_train, X_val, y_train, y_val = train_test_split(
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 2197, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 1793, in split
+    y = check_array(y, ensure_2d=False, dtype=None)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/utils/validation.py", line 663, in check_array
+    _assert_all_finite(array,
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/lib/python3.8/site-packages/sklearn/utils/validation.py", line 111, in _assert_all_finite
+    raise ValueError("Input contains NaN")
+ValueError: Input contains NaN

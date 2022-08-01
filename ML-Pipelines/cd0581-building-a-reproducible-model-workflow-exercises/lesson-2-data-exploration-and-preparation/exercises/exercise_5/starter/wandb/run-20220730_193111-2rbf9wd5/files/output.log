@@ -1,0 +1,51 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Attempted to fetch artifact without alias (e.g. "<artifact_name>:v3" or "<artifact_name>:latest")
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 4040, in _load
+    response = self.client.execute(
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 159, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 205, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/requests/models.py", line 941, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/normalize.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 777, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 3493, in __init__
+    self._load()
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 4052, in _load
+    raise ValueError(
+ValueError: Attempted to fetch artifact without alias (e.g. "<artifact_name>:v3" or "<artifact_name>:latest")
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py", line 69, in <module>
+    go(args)
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py", line 16, in go
+    artifact = run.use_artifact(args.input_artifact)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 222, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 2308, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/normalize.py", line 58, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/normalize.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 777, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 3493, in __init__
+    self._load()
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/lib/python3.9/site-packages/wandb/apis/public.py", line 4052, in _load
+    raise ValueError(
+wandb.errors.CommError: Attempted to fetch artifact without alias (e.g. "<artifact_name>:v3" or "<artifact_name>:latest")

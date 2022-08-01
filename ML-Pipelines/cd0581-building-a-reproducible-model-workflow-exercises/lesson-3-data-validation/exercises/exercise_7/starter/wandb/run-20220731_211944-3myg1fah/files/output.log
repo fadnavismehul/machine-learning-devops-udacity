@@ -1,0 +1,5 @@
+[1mcollected 3 items                                                                                                                                                                                         
+test_data.py::test_column_presence_and_type [32mPASSED
+test_data.py::test_class_names [32mPASSED
+test_data.py::test_column_ranges [32mPASSED
+[32m============================================================================================ [1m3 passed[22m in 6.73s ============================================================================================

@@ -1,0 +1,17 @@
+
+2022-07-30 20:13:07,062 Downloading and reading artifact
+2022-07-30 20:13:08,720 Splitting data into train and test
+Traceback (most recent call last):
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_6/starter/run.py", line 122, in <module>
+    go(args)
+  File "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_6/starter/run.py", line 35, in go
+    splits["train"], splits["test"] = train_test_split(df,test_size=args.test_size,stratify=args.stratify.split(','))# USE train_test_split here to split df according to the provided args.test_size
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-92cf12d04b7e41650e828b2d6646ca1a486815e4/lib/python3.9/site-packages/sklearn/model_selection/_split.py", line 2197, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-92cf12d04b7e41650e828b2d6646ca1a486815e4/lib/python3.9/site-packages/sklearn/model_selection/_split.py", line 1386, in split
+    X, y, groups = indexable(X, y, groups)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-92cf12d04b7e41650e828b2d6646ca1a486815e4/lib/python3.9/site-packages/sklearn/utils/validation.py", line 299, in indexable
+    check_consistent_length(*result)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-92cf12d04b7e41650e828b2d6646ca1a486815e4/lib/python3.9/site-packages/sklearn/utils/validation.py", line 262, in check_consistent_length
+    raise ValueError("Found input variables with inconsistent numbers of"
+ValueError: Found input variables with inconsistent numbers of samples: [41975, 1]

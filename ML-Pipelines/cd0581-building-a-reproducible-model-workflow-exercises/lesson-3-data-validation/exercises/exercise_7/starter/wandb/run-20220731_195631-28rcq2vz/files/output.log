@@ -1,0 +1,37 @@
+[1mcollected 3 items                                                                                                                                                                                         
+test_data.py::test_column_presence_and_type [32mPASSED
+test_data.py::test_class_names [32mPASSED
+test_data.py::test_column_ranges [31mFAILED
+================================================================================================ FAILURES =================================================================================================
+[31m[1m___________________________________________________________________________________________ test_column_ranges ____________________________________________________________________________________________
+data =        Unnamed: 0  danceability  energy  key  ...      genre                                      song_name           ...            NaN       Best of Hardstyle 2020                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+    def test_column_ranges(data):
+        ranges = {
+            "time_signature": (1, 5),
+            "key": (0, 11),
+            "danceability": (0, 1),
+            "energy": (0, 1),
+            "loudness": (-35, 5),
+            "speechiness": (0, 1),
+            "acousticness": (0, 1),
+            "instrumentalness": (0, 1),
+            "liveness": (0, 1),
+            "valence": (0, 1),
+            "tempo": (50, 250),
+            "duration_ms": (20000, 1000000),
+        }
+        for col_name, (minimum, maximum) in ranges.items():
+            # YOUR CODE HERE: check that the values in the column col_name are within the expected range
+            # HINT: look at the .between method of pandas, and then use .all() like in the previous
+            # test
+>           assert data[col_name].between(minimum,maximum).all()
+[31m[1mE           assert False
+[31m[1mE            +  where False = <bound method NDFrame._add_numeric_operations.<locals>.all of 0         True\n1         True\n2        False\n3         T...\n41970     True\n41971     True\n41972     True\n41973     True\n41974     True\nName: loudness, Length: 41975, dtype: bool>()
+[31m[1mE            +    where <bound method NDFrame._add_numeric_operations.<locals>.all of 0         True\n1         True\n2        False\n3         T...\n41970     True\n41971     True\n41972     True\n41973     True\n41974     True\nName: loudness, Length: 41975, dtype: bool> = 0         True\n1         True\n2        False\n3         True\n4         True\n         ...  \n41970     True\n41971     True\n41972     True\n41973     True\n41974     True\nName: loudness, Length: 41975, dtype: bool.all
+[31m[1mE            +      where 0         True\n1         True\n2        False\n3         True\n4         True\n         ...  \n41970     True\n41971     True\n41972     True\n41973     True\n41974     True\nName: loudness, Length: 41975, dtype: bool = <bound method Series.between of 0       -7.364\n1       -7.230\n2          NaN\n3       -4.710\n4       -7.668\n         .....970   -5.148\n41971   -7.922\n41972   -3.102\n41973   -4.777\n41974   -5.862\nName: loudness, Length: 41975, dtype: float64>(-35, 5)
+[31m[1mE            +        where <bound method Series.between of 0       -7.364\n1       -7.230\n2          NaN\n3       -4.710\n4       -7.668\n         .....970   -5.148\n41971   -7.922\n41972   -3.102\n41973   -4.777\n41974   -5.862\nName: loudness, Length: 41975, dtype: float64> = 0       -7.364\n1       -7.230\n2          NaN\n3       -4.710\n4       -7.668\n         ...  \n41970   -5.148\n41971   -7.922\n41972   -3.102\n41973   -4.777\n41974   -5.862\nName: loudness, Length: 41975, dtype: float64.between
+[31m[1mtest_data.py[39m[22m:100: AssertionError
+========================================================================================= short test summary info =========================================================================================
+FAILED test_data.py::test_column_ranges - assert False
+[31m======================================================================================= [1m1 failed[39m[22m, [32m2 passed[31m in 5.37s =======================================================================================

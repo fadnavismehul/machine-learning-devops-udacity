@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mehul.fadnavis/Desktop/Personal/ML%20NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_7/starter/mlruns/0/b9eb39e268da4b3bb6e649d63e88cd89/artifacts
+end_time: 1659268557694
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: b9eb39e268da4b3bb6e649d63e88cd89
+run_uuid: b9eb39e268da4b3bb6e649d63e88cd89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1659268542375
+status: 4
+tags: []
+user_id: mehul.fadnavis

@@ -16,7 +16,9 @@ def go(config: DictConfig):
 
     # You can get the path at the root of the MLflow project with this:
     root_path = hydra.utils.get_original_cwd()
-
+    # print(root_path)
+    # path_start = '/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/'
+    # relative_path = os.path.relpath(root_path,"~")
     # Serialize random forest configuration
     model_config = os.path.abspath("random_forest_config.json")
 
@@ -24,7 +26,7 @@ def go(config: DictConfig):
         json.dump(dict(config["random_forest"]), fp)
 
     _ = mlflow.run(
-        os.path.join(root_path, "random_forest"),
+        os.path.join(root_path.replace('/Users/mehul.fadnavis','~'), "random_forest"),
         "main",
         parameters={
             "train_data": config["data"]["train_data"],

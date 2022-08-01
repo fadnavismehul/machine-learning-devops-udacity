@@ -1,0 +1,7 @@
+[1m=========================================================================================== test session starts ===========================================================================================
+platform darwin -- Python 3.9.13, pytest-6.2.2, py-1.11.0, pluggy-0.13.1 -- /Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-8e76858e4a2db0919e08db6b1fb679975d882e04/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_9/starter
+[1mcollected 1 item                                                                                                                                                                                          
+test_data.py::test_kolmogorov_smirnov [32mPASSED
+[32m============================================================================================ [1m1 passed[22m in 5.60s ============================================================================================

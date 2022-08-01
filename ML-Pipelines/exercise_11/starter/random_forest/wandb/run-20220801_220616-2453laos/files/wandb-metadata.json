@@ -1,0 +1,27 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-08-01T14:06:18.089365",
+    "startedAt": "2022-08-01T14:06:16.026986",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "exercise_6/data_train.csv:latest",
+        "--model_config",
+        "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/multirun/2022-08-01/22-03-46/33/random_forest_config.yml"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "ML-Pipelines/exercise_11/starter/random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/fadnavismehul/machine-learning-devops-udacity.git",
+        "commit": "0636fffb4bdbdc69d17650dbacb565c9c951714c"
+    },
+    "email": "fadnavismehul@gmail.com",
+    "root": "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity",
+    "host": "ITSG006062-MAC",
+    "username": "mehul.fadnavis",
+    "executable": "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-c0e1c8adf3fa8401bd03e637489f128fc5df2503/bin/python"
+}

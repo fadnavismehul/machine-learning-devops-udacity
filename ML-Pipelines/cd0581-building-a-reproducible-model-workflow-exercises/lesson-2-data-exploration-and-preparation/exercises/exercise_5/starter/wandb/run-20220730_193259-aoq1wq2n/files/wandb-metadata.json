@@ -1,0 +1,31 @@
+{
+    "os": "macOS-11.6.7-x86_64-i386-64bit",
+    "python": "3.9.13",
+    "heartbeatAt": "2022-07-30T11:33:00.286101",
+    "startedAt": "2022-07-30T11:32:59.132816",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "exercise_4/genres_mod.parquet:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "preprocessed_data",
+        "--artifact_description",
+        "Preprocessed file"
+    ],
+    "state": "running",
+    "program": "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py",
+    "codePath": "ML-Pipelines/cd0581-building-a-reproducible-model-workflow-exercises/lesson-2-data-exploration-and-preparation/exercises/exercise_5/starter/run.py",
+    "git": {
+        "remote": "https://github.com/fadnavismehul/machine-learning-devops-udacity.git",
+        "commit": "0636fffb4bdbdc69d17650dbacb565c9c951714c"
+    },
+    "email": "fadnavismehul@gmail.com",
+    "root": "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity",
+    "host": "ITSG006062-MAC",
+    "username": "mehul.fadnavis",
+    "executable": "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-21861da023ddd4f330fc00ab00b7440a443eb94f/bin/python"
+}

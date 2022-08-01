@@ -1,0 +1,185 @@
+2022-08-01 22:01:26,099 INFO    MainThread:71679 [internal.py:wandb_internal():90] W&B internal server running at pid: 71679, started at: 2022-08-01 22:01:26.098878
+2022-08-01 22:01:26,100 INFO    WriterThread:71679 [datastore.py:open_for_write():75] open: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/run-35nwvg0d.wandb
+2022-08-01 22:01:26,101 DEBUG   SenderThread:71679 [sender.py:send():232] send: header
+2022-08-01 22:01:26,101 DEBUG   SenderThread:71679 [sender.py:send():232] send: run
+2022-08-01 22:01:26,452 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: check_version
+2022-08-01 22:01:26,455 INFO    SenderThread:71679 [dir_watcher.py:__init__():197] watching files in: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files
+2022-08-01 22:01:26,456 INFO    SenderThread:71679 [sender.py:_start_run_threads():811] run started: 35nwvg0d with start time 1659362485
+2022-08-01 22:01:26,456 DEBUG   SenderThread:71679 [sender.py:send():232] send: summary
+2022-08-01 22:01:26,456 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-08-01 22:01:26,456 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: check_version
+2022-08-01 22:01:26,545 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: run_start
+2022-08-01 22:01:26,546 DEBUG   HandlerThread:71679 [meta.py:__init__():35] meta init
+2022-08-01 22:01:26,547 DEBUG   HandlerThread:71679 [meta.py:__init__():49] meta init done
+2022-08-01 22:01:26,547 DEBUG   HandlerThread:71679 [meta.py:probe():209] probe
+2022-08-01 22:01:26,548 DEBUG   HandlerThread:71679 [meta.py:_setup_git():199] setup git
+2022-08-01 22:01:26,572 DEBUG   HandlerThread:71679 [meta.py:_setup_git():206] setup git done
+2022-08-01 22:01:26,572 DEBUG   HandlerThread:71679 [meta.py:_save_pip():53] save pip
+2022-08-01 22:01:26,573 DEBUG   HandlerThread:71679 [meta.py:_save_pip():67] save pip done
+2022-08-01 22:01:26,573 DEBUG   HandlerThread:71679 [meta.py:_save_conda():74] save conda
+2022-08-01 22:01:27,459 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/conda-environment.yaml
+2022-08-01 22:01:27,460 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/requirements.txt
+2022-08-01 22:01:27,460 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json
+2022-08-01 22:01:27,793 DEBUG   HandlerThread:71679 [meta.py:_save_conda():84] save conda done
+2022-08-01 22:01:27,794 DEBUG   HandlerThread:71679 [meta.py:probe():247] probe done
+2022-08-01 22:01:27,798 DEBUG   SenderThread:71679 [sender.py:send():232] send: files
+2022-08-01 22:01:27,799 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-08-01 22:01:27,806 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-01 22:01:27,806 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: stop_status
+2022-08-01 22:01:28,137 DEBUG   SenderThread:71679 [sender.py:send():232] send: telemetry
+2022-08-01 22:01:28,459 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/conda-environment.yaml
+2022-08-01 22:01:28,459 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/output.log
+2022-08-01 22:01:28,459 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-metadata.json
+2022-08-01 22:01:28,637 INFO    Thread-11 :71679 [upload_job.py:push():132] Uploaded file /var/folders/g2/mc945vwd1fv74fgwp37yl33r0000gr/T/tmpbtx66wutwandb/bsyar1f9-wandb-metadata.json
+2022-08-01 22:01:29,522 DEBUG   SenderThread:71679 [sender.py:send():232] send: config
+2022-08-01 22:01:30,469 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/output.log
+2022-08-01 22:01:30,801 DEBUG   SenderThread:71679 [sender.py:send():232] send: summary
+2022-08-01 22:01:30,802 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-08-01 22:01:31,472 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json
+2022-08-01 22:01:32,341 DEBUG   SenderThread:71679 [sender.py:send():232] send: files
+2022-08-01 22:01:32,342 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file media/images/feature_importance_0_43dd7cefc3f19db08f0c.png with policy now
+2022-08-01 22:01:32,345 DEBUG   SenderThread:71679 [sender.py:send():232] send: files
+2022-08-01 22:01:32,345 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file media/images/confusion_matrix_0_23be23fefa0e391275e6.png with policy now
+2022-08-01 22:01:32,349 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-01 22:01:32,350 DEBUG   SenderThread:71679 [sender.py:send():232] send: history
+2022-08-01 22:01:32,350 DEBUG   SenderThread:71679 [sender.py:send():232] send: summary
+2022-08-01 22:01:32,351 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-08-01 22:01:32,351 DEBUG   SenderThread:71679 [sender.py:send():232] send: telemetry
+2022-08-01 22:01:32,474 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/output.log
+2022-08-01 22:01:32,474 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json
+2022-08-01 22:01:32,474 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/media/images/confusion_matrix_0_23be23fefa0e391275e6.png
+2022-08-01 22:01:32,474 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/media/images/feature_importance_0_43dd7cefc3f19db08f0c.png
+2022-08-01 22:01:32,474 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/media
+2022-08-01 22:01:32,474 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/media/images
+2022-08-01 22:01:33,262 INFO    Thread-12 :71679 [upload_job.py:push():132] Uploaded file /var/folders/g2/mc945vwd1fv74fgwp37yl33r0000gr/T/tmpbtx66wutwandb/1qppp1w0-media/images/feature_importance_0_43dd7cefc3f19db08f0c.png
+2022-08-01 22:01:33,547 INFO    Thread-13 :71679 [upload_job.py:push():132] Uploaded file /var/folders/g2/mc945vwd1fv74fgwp37yl33r0000gr/T/tmpbtx66wutwandb/2xw1mg1d-media/images/confusion_matrix_0_23be23fefa0e391275e6.png
+2022-08-01 22:01:34,421 DEBUG   SenderThread:71679 [sender.py:send():232] send: exit
+2022-08-01 22:01:34,421 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:34,421 INFO    SenderThread:71679 [sender.py:send_exit():368] handling exit code: 0
+2022-08-01 22:01:34,422 INFO    SenderThread:71679 [sender.py:send_exit():370] handling runtime: 7
+2022-08-01 22:01:34,422 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-08-01 22:01:34,422 INFO    SenderThread:71679 [sender.py:send_exit():376] send defer
+2022-08-01 22:01:34,423 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:34,423 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,423 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-01 22:01:34,424 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,424 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-08-01 22:01:34,424 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 1
+2022-08-01 22:01:34,424 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,424 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-01 22:01:34,482 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/output.log
+2022-08-01 22:01:34,483 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json
+2022-08-01 22:01:34,508 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,508 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-08-01 22:01:34,508 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 2
+2022-08-01 22:01:34,508 DEBUG   SenderThread:71679 [sender.py:send():232] send: stats
+2022-08-01 22:01:34,509 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,509 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-01 22:01:34,509 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,509 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-08-01 22:01:34,510 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 3
+2022-08-01 22:01:34,510 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,510 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-01 22:01:34,510 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,510 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-08-01 22:01:34,510 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 4
+2022-08-01 22:01:34,511 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,511 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-01 22:01:34,511 DEBUG   SenderThread:71679 [sender.py:send():232] send: summary
+2022-08-01 22:01:34,512 INFO    SenderThread:71679 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-08-01 22:01:34,512 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,512 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-08-01 22:01:34,512 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 5
+2022-08-01 22:01:34,512 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,512 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-01 22:01:34,512 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,513 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-08-01 22:01:34,525 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:34,916 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 6
+2022-08-01 22:01:34,916 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:34,917 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:34,917 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-01 22:01:34,917 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:34,917 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-08-01 22:01:34,917 INFO    SenderThread:71679 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-08-01 22:01:35,019 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:35,484 INFO    Thread-7  :71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/config.yaml
+2022-08-01 22:01:35,485 INFO    SenderThread:71679 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json
+2022-08-01 22:01:35,486 INFO    SenderThread:71679 [dir_watcher.py:finish():342] scan: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files
+2022-08-01 22:01:35,486 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/requirements.txt requirements.txt
+2022-08-01 22:01:35,486 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/output.log output.log
+2022-08-01 22:01:35,489 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/config.yaml config.yaml
+2022-08-01 22:01:35,491 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json wandb-summary.json
+2022-08-01 22:01:35,492 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/conda-environment.yaml conda-environment.yaml
+2022-08-01 22:01:35,495 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-metadata.json wandb-metadata.json
+2022-08-01 22:01:35,502 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/media/images/confusion_matrix_0_23be23fefa0e391275e6.png media/images/confusion_matrix_0_23be23fefa0e391275e6.png
+2022-08-01 22:01:35,502 INFO    SenderThread:71679 [dir_watcher.py:finish():356] scan save: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/media/images/feature_importance_0_43dd7cefc3f19db08f0c.png media/images/feature_importance_0_43dd7cefc3f19db08f0c.png
+2022-08-01 22:01:35,502 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 7
+2022-08-01 22:01:35,502 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:35,502 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:35,503 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-01 22:01:35,504 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:35,505 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-08-01 22:01:35,505 INFO    SenderThread:71679 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-01 22:01:35,604 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:35,604 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:35,706 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:35,706 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:35,809 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:35,809 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:35,911 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:35,911 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,014 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,015 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,117 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,117 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,219 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,220 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,325 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,326 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,429 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,430 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,532 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,532 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,552 INFO    Thread-14 :71679 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/requirements.txt
+2022-08-01 22:01:36,563 INFO    Thread-15 :71679 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/output.log
+2022-08-01 22:01:36,591 INFO    Thread-16 :71679 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/config.yaml
+2022-08-01 22:01:36,600 INFO    Thread-17 :71679 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/wandb-summary.json
+2022-08-01 22:01:36,634 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,634 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,649 INFO    Thread-18 :71679 [upload_job.py:push():132] Uploaded file /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/files/conda-environment.yaml
+2022-08-01 22:01:36,737 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,738 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,840 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:36,840 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:36,854 INFO    Thread-6  :71679 [sender.py:transition_state():389] send defer: 8
+2022-08-01 22:01:36,855 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:36,855 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-01 22:01:36,855 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:36,855 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-08-01 22:01:36,942 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:37,399 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 9
+2022-08-01 22:01:37,399 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:37,400 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:37,400 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-01 22:01:37,400 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:37,400 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-08-01 22:01:37,400 INFO    SenderThread:71679 [sender.py:transition_state():389] send defer: 10
+2022-08-01 22:01:37,401 DEBUG   SenderThread:71679 [sender.py:send():232] send: final
+2022-08-01 22:01:37,401 DEBUG   SenderThread:71679 [sender.py:send():232] send: footer
+2022-08-01 22:01:37,401 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: defer
+2022-08-01 22:01:37,401 INFO    HandlerThread:71679 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-01 22:01:37,401 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: defer
+2022-08-01 22:01:37,401 INFO    SenderThread:71679 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-08-01 22:01:37,501 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-01 22:01:37,502 DEBUG   SenderThread:71679 [sender.py:send_request():246] send_request: poll_exit
+2022-08-01 22:01:37,502 INFO    SenderThread:71679 [file_pusher.py:join():150] waiting for file pusher
+2022-08-01 22:01:38,282 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-01 22:01:38,283 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-01 22:01:38,284 DEBUG   HandlerThread:71679 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-01 22:01:38,284 INFO    HandlerThread:71679 [handler.py:finish():806] shutting down handler
+2022-08-01 22:01:38,405 INFO    WriterThread:71679 [datastore.py:close():279] close: /Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_11/starter/random_forest/wandb/run-20220801_220125-35nwvg0d/run-35nwvg0d.wandb
+2022-08-01 22:01:39,182 INFO    SenderThread:71679 [sender.py:finish():1110] shutting down sender
+2022-08-01 22:01:39,182 INFO    SenderThread:71679 [file_pusher.py:finish():145] shutting down file pusher
+2022-08-01 22:01:39,182 INFO    SenderThread:71679 [file_pusher.py:join():150] waiting for file pusher
+2022-08-01 22:01:39,185 INFO    MainThread:71679 [internal.py:handle_exit():80] Internal process exited
