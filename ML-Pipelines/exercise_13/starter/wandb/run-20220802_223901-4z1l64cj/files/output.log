@@ -1,0 +1,9 @@
+2022-08-02 22:39:02,964 Downloading and reading test artifact
+2022-08-02 22:39:04,531 Extracting target from dataframe
+2022-08-02 22:39:04,533 Downloading and reading the exported model
+Traceback (most recent call last):
+  File "run.py", line 87, in <module>
+    go(args)
+  File "run.py", line 35, in go
+    pipe = mlflow.sklearn.load_model(+"/model_export")
+TypeError: bad operand type for unary +: 'str'

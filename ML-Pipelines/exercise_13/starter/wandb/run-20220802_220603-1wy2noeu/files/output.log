@@ -1,0 +1,13 @@
+2022-08-02 22:06:04,282 Downloading and reading test artifact
+2022-08-02 22:06:05,986 Extracting target from dataframe
+2022-08-02 22:06:05,988 Downloading and reading the exported model
+Traceback (most recent call last):
+  File "run.py", line 87, in <module>
+    go(args)
+  File "run.py", line 35, in go
+    pipe = mlflow.sklearn.load_model(model_export_path)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-9ad98997f01f10ca95d41cc160bcad3e8dac16f6/lib/python3.8/site-packages/mlflow/sklearn/__init__.py", line 446, in load_model
+    flavor_conf = _get_flavor_configuration(model_path=local_model_path, flavor_name=FLAVOR_NAME)
+  File "/Users/mehul.fadnavis/opt/anaconda3/envs/mlflow-9ad98997f01f10ca95d41cc160bcad3e8dac16f6/lib/python3.8/site-packages/mlflow/utils/model_utils.py", line 24, in _get_flavor_configuration
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Could not find an "MLmodel" configuration file at "/Users/mehul.fadnavis/Desktop/Personal/ML NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_13/starter/artifacts/model_export:v0"

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mehul.fadnavis/Desktop/Personal/ML%20NanoDegree/Code/machine-learning-devops-udacity/ML-Pipelines/exercise_13/starter/mlruns/0/baf6eee5fb02408d93459a8da7abc731/artifacts
+end_time: 1659451149696
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: baf6eee5fb02408d93459a8da7abc731
+run_uuid: baf6eee5fb02408d93459a8da7abc731
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1659451137637
+status: 4
+tags: []
+user_id: mehul.fadnavis
